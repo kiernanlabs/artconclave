@@ -19,7 +19,7 @@ from datetime import datetime
 #
 
 @anvil.server.callable
-def store_artwork(file):
+def store_artwork(file, artist):
     """
     Store an uploaded artwork file in the artwork data table.
     
@@ -33,7 +33,7 @@ def store_artwork(file):
     artwork_row = app_tables.artwork.add_row(
         file=file,
         date_uploaded=datetime.now(),
-        status="pending"  # Initial status
+        artist=artist
     )
     
     return artwork_row
