@@ -12,3 +12,8 @@ class eval(evalTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def submit_button_click(self, **event_args):
+    artist = self.artist_box    
+    file = self.file_input
+    anvil.server.store_artwork(file,artist)
