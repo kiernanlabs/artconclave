@@ -1,0 +1,16 @@
+components_by_slot:
+  content:
+  - layout_properties: {}
+    name: text_1
+    properties: {text: Upload a sketch here for evaluation}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {}
+    name: file_loader_1
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.FileLoader
+  - layout_properties: {}
+    name: button_1
+    properties: {text: Submit}
+    type: form:dep_lin1x4oec0ytd:_Components.Button
+is_package: true
+layout: {type: 'form:dep_lin1x4oec0ytd:Layouts.NavigationRailLayout'}
