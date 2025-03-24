@@ -6,7 +6,7 @@ from anvil.tables import app_tables
 import anvil.server
 
 
-class eval(evalTemplate):
+class EvalForm(evalTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
