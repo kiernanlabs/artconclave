@@ -3,7 +3,10 @@ components_by_slot:
   - components:
     - layout_properties: {slot: card-content-slot}
       name: heading_1
-      properties: {text: Submit artwork for evaluation}
+      properties:
+        spacing:
+          padding: [null, null, null, '10']
+        text: Submit artwork for evaluation
       type: form:dep_lin1x4oec0ytd:_Components.Heading
     - components:
       - data_bindings: []
@@ -28,5 +31,19 @@ components_by_slot:
     name: card_1
     properties: {}
     type: form:dep_lin1x4oec0ytd:_Components.Card
+  - components:
+    - layout_properties: {slot: card-content-slot}
+      name: card_content_container_2
+      properties: {}
+      type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+    layout_properties: {}
+    name: card_2
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Card
+  navigation:
+  - layout_properties: {}
+    name: home_nav
+    properties: {text: Home}
+    type: form:dep_lin1x4oec0ytd:_Components.NavigationLink
 is_package: true
 layout: {type: 'form:dep_lin1x4oec0ytd:Layouts.NavigationRailLayout'}
